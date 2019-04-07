@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+	{% block content %}
+		<div id="poster">
+			<p id="title"><b>Arrival</b></p>
+				<img id = "mainImage" src = '/static/arrival.jpg'>
+				<div id="buttons">
+				<table><tr>
+					
+					<td> <img id ="like" src='/static/thumbs-down.png' onclick="dislike_next()"></td>
+					<td> <button class = "button" type ="button" onclick="trailer()">Watch Trailer</button></td>
+					<td> <img id="like" src='/static/thumbs-up.png' onclick="goNext()"></td>
+				</tr> </table>
+				</div>
+		</div>
+
+
+
+
+		 <script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+	{% endblock content %}
