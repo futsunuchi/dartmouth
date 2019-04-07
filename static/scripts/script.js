@@ -50,3 +50,8 @@ function trailer(){
     window.open(links[currentImage]);
 }
 
+/*$.ajax({
+	url:/app/ai.py
+	method: "POST"
+	data:{title: title}
+});*/
